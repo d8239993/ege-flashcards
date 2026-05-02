@@ -2,17 +2,12 @@
 
 Просмотр карточек в браузере. Разделы — папки `Задание №…`, внутри пары картинок: нечётный номер — вопрос, следующий чётный — ответ.
 
-## Готовый репозиторий на диске
+## Репозиторий и сайт
 
-Проект собран в **`C:\Users\82399\Documents\vk-cards-flashcards`**: `git` инициализирован, ветка `main`, первый коммит с картинками и GitHub Actions.
+- **GitHub:** [d8239993/ege-flashcards](https://github.com/d8239993/ege-flashcards)
+- **Сайт (GitHub Pages):** https://d8239993.github.io/ege-flashcards/
 
-**Осталось только привязать GitHub (нужен ваш логин в браузере):**
-
-1. Откройте папку в Проводнике и запустите **`publish_to_github.ps1`** (если PowerShell ругается на политику: `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` один раз).
-2. Войдите в аккаунт в открывшемся браузере, если скрипт попросит.
-3. На GitHub: **Settings → Pages → Source: GitHub Actions**. После зелёного workflow сайт: `https://<ваш-логин>.github.io/vk-cards-flashcards/`.
-
-Альтернатива без скрипта: в папке проекта выполнить `gh auth login`, затем `gh repo create vk-cards-flashcards --public --source . --remote origin --push`.
+Локальная копия: **`C:\Users\82399\Documents\vk-cards-flashcards`**, ветка `main`. После `git push` workflow пересобирает `manifest.json` и публикует `_site`.
 
 ## Публикация на GitHub Pages (вручную)
 

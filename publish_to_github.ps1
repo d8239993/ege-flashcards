@@ -15,7 +15,7 @@ if ($LASTEXITCODE -ne 0) {
     & $gh auth login -h github.com -p https -w
 }
 
-$repoName = "vk-cards-flashcards"
+$repoName = "ege-flashcards"
 $hasRemote = git remote get-url origin 2>$null
 if ($LASTEXITCODE -eq 0) {
     Write-Host "Remote уже задан, отправляю в GitHub..."
