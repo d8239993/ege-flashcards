@@ -1,0 +1,7 @@
+# Локальная сборка (на GitHub всё собирается заново)
+_site/
+
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
