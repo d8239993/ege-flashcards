@@ -26,5 +26,6 @@ if ($LASTEXITCODE -eq 0) {
 
 Write-Host "Создаю репозиторий $repoName и отправляю код..."
 & $gh repo create $repoName --public --source . --remote origin --push
-Write-Host "Готово. Откройте: https://github.com/$( & $gh api user -q .login )/$repoName"
+$user = & $gh api user -q .login 2>$null
+Write-Host "Готово. Репозиторий: https://github.com/$user/$repoName"
 Write-Host "Затем: Settings → Pages → Build and deployment → Source: GitHub Actions."
